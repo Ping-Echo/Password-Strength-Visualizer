@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Visualizer 🔐</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Password Strength Visualizer</h1>
+    <p>Type a password to check its strength in real-time.</p>
+
+    <input type="password" id="password" placeholder="Enter your password" />
+
+    <div class="meter" id="strength-meter">
+      <div class="bar" id="strength-bar"></div>
+    </div>
+
+    <p id="strength-text">Strength: <span>—</span></p>
+
+    <ul id="tips"></ul>
+
+    <p class="crack-time">Estimated time to crack: <span id="crack-time">—</span></p>
+
+    <button id="copy-btn">📋 Copy Password</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
